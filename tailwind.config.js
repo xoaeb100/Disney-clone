@@ -1,10 +1,19 @@
 module.exports = {
+  mode: "jit",
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        home: "url('/images/background.png')",
+      }),
+    },
+    fontFamily: {
+      body: ["Montserrat", "sans-serif"],
+      // the body is just a variable for font name
+    },
   },
-  plugins: [],
-}
+  plugins: [require("tailwind-scrollbar-hide")],
+};

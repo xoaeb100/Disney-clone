@@ -1,0 +1,7 @@
+ refer .env.local this contains confidential info and .env's are not uploaded on github
+
+
+ID:
+530440867155-gegmb5klkell4u26v4vmh6msuks29pn3.apps.googleusercontent.com
+secret:
+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
